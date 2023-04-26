@@ -15,6 +15,12 @@ for i in range(1, 1 + num_input):
     numbers.append(user_input)
 
 # Create a text file for user's input
+with open("user_input.txt","w")as number_list:
+    number_list.write("\n".join(str(user_input) for user_input in numbers))
+
+with open("user_input.txt", "r") as user_input:
+    numbers = [int(x) for x in user_input.read().split()]
+
 # Create a Formula for Separating Even and Odd
 # Add Loading Time
 # Ceate a Even Text File

@@ -63,6 +63,15 @@ def animate():
 
 animate()
 # Ceate a Even Text File
+with open("even_list.txt", "w") as even_list:
+    even_list.write(",".join(str(x) for x in even_numbers))
 # Print Even List
+with open("even_list.txt", "r") as even_list:
+    print("\n""Even Number List: " + even_list.read())
+    
 # Ceate a Odd Text File
+with open("odd_list.txt", "w") as odd_list:
+    odd_list.write(",".join(str(x) for x in odd_numbers))
 # Print Odd List
+with open("odd_list.txt", "r") as odd_list:
+    print("Odd Number List: " + odd_list.read())

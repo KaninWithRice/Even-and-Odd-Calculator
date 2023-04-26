@@ -31,6 +31,37 @@ for x in numbers:
         odd_numbers.append(x)
 
 # Add Loading Time
+import time
+import sys
+
+done = 'false'
+
+def animate():
+        sys.stdout.write('\rLoading Please Wait ▒▒▒▒▒▒▒▒▒▒  0%')
+        time.sleep(0.5)
+        sys.stdout.write('\rLoading Please Wait █▒▒▒▒▒▒▒▒▒  10%')
+        time.sleep(0.5)
+        sys.stdout.write('\rLoading Please Wait ██▒▒▒▒▒▒▒▒  20%')
+        time.sleep(0.5)
+        sys.stdout.write('\rLoading Please Wait ███▒▒▒▒▒▒▒  30%')
+        time.sleep(0.5)
+        sys.stdout.write('\rLoading Please Wait ████▒▒▒▒▒▒  40%')
+        time.sleep(0.5)
+        sys.stdout.write('\rLoading Please Wait █████▒▒▒▒▒  50%')
+        time.sleep(0.5)
+        sys.stdout.write('\rLoading Please Wait ██████▒▒▒▒  60%')
+        time.sleep(0.5)
+        sys.stdout.write('\rLoading Please Wait ███████▒▒▒  70%')
+        time.sleep(0.5)
+        sys.stdout.write('\rLoading Please Wait ████████▒▒  80%')
+        time.sleep(0.5)
+        sys.stdout.write('\rLoading Please Wait █████████▒  90%')
+        time.sleep(0.5)
+        sys.stdout.write('\rLoading Please Wait ██████████ 100%')
+        time.sleep(0.3)
+        sys.stdout.write('\nDone!     \n')
+
+animate()
 # Ceate a Even Text File
 # Print Even List
 # Ceate a Odd Text File
